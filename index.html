@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Probando el PreWork</title>
+</head>
+
+<body>
+    <h1>Comandos básicos en la terminal</h1>
+    <ul>
+        <li><strong>$pwd:</strong> Nos muestra la ruta de carpetas en la que te encuentras ahora mismo.</li>
+        <li><strong>$mkdir:</strong> Nos permite crear carpetas (por ejemplo, mkdir Carpeta-Importante).</li>
+        <li><strong>$touch:</strong> Nos permite crear archivos (por ejemplo, touch archivo.txt).</li>
+        <li><strong>$rm</strong> Nos permite borrar un archivo o carpeta (por ejemplo, rm archivo.txt). Mucho cuidado
+            con este comando, puedes borrar todo tu disco duro.</li>
+        <li><strong> $cat:</strong> Ver el contenido de un archivo (por ejemplo, cat nombre-archivo.txt).</li>
+        <li><strong>$ls:</strong> Nos permite cambiar ver los archivos de la carpeta donde estamos ahora mismo. Podemos
+            usar uno o más argumentos para ver más información sobre estos archivos (los argumentos pueden ser -- + el
+            nombre del argumento o - + una sola letra o shortcut por cada argumento).
+            <ul>
+                <li>- ls -a: Mostrar todos los archivos, incluso los ocultos.</li>
+                <li>- ls -l: Ver todos los archivos como una lista.</li>
+            </ul>
+        </li>
+        <li><strong> $cd:</strong> Nos permite navegar entre carpetas.
+            <ul>
+                <li>- cd /: Ir a la ruta principal</li>
+                <li>- cd o cd ~: Ir a la ruta de tu usuario</li>
+                <li>- cd carpeta/subcarpeta: Navegar a una ruta dentro de la carpeta donde estamos ahora mismo.</li>
+                <li>- cd .. (cd + dos puntos): Regresar una carpeta hacia atrás.</li>
+                <li>- Si quieres referirte al directorio en el que te encuentras ahora mismo puedes usar cd . (cd + un
+                    punto).</li>
+            </ul>
+        </li>
+        <li><strong></strong>$history:</strong> Ver los últimos comandos que ejecutamos y un número especial con el que
+            podemos repetir su ejecución.</li>
+        <li><strong>$! + número:</strong> Ejecutar algún comando con el número que nos muestra el comando history (por
+            ejemplo, !72).</li>
+        <li><strong>$clear:</strong> Para limpiar la terminal. También podemos usar los atajos de teclado Ctrl + L o
+            Command + L.```</li>
+    </ul>
+    <hr>
+    <p>Si en algun momento quiero actualizar mi consola, utilizo <strong>sudo apt-get update</strong> para actualizar el
+        gestor de paquetes o manejador de dependencias, donde almacenan todo lo que se puede instalar en el ubunto,
+        registrados en este repo de dependencias. Si luego de la revision, quiero aplicar las actualizaciones, debo
+        utilizar el comando <strong>sudo apt-get upgrade</strong>.
+        Si ahora quiero instalar algo nuevo, por ejemplo Node, utilizo <strong>sudo apt instal nodejs</strong>.
+    </p>
+
+    <hr>
+    <p>Para instalar NodeJS debemos correr el comando <strong>sudo apt install nodejs</strong>. Cuando tratas de
+        instalar la última versión de node en Ubuntu utilizando el apt-package manager te consigues con que la versión
+        que se instala es la 10.x.x. Esa es la última versión disponible en los repositorios de Ubuntu, pero no es la
+        última versión de Node.
+        Más info de como actualizar la version de NodeJS <a
+            href="https://platzi.com/tutoriales/1650-prework-2019/6970-como-instalar-la-ultima-version-de-nodejs-en-ubuntu/"
+            target="_blank">AQUI</a>
+    </p>
+    <p>Entre los comentarios, la manera de instarlo es esta:<br>
+        <i>curl -fsSL https://deb.nodesource.com/setup_14.x | sudo -E bash -</i>
+        <br>
+        <i>sudo apt-get install -y nodejs</i>
+    </p>
+    <p>
+        Además, alcunos comendos y comentarios:
+        <br>
+        Success! Created prueba at /home/proyecto81/Platzi/prueba<br>
+        Inside that directory, you can run several commands:<br><br>
+
+        <span style="color: #336699 ">npm start</span><br>
+        Starts the development server.<br>
+        <br>
+        <span style="color: #336699 ">npm run build</span><br>
+        Bundles the app into static files for production.<br>
+        <br>
+        <span style="color: #336699 ">npm test</span><br>
+        Starts the test runner.<br>
+        <br>
+        <span style="color: #336699 ">npm run eject</span><br>
+        Removes this tool and copies build dependencies, configuration files<br>
+        and scripts into the app directory. If you do this, you can’t go back!<br>
+        <br><br>
+        We suggest that you begin by typing:<br>
+        <br>
+        <span style="color: #336699 ">cd</span> prueba<br>
+        <span style="color: #336699 ">npm start</span><br>
+        <br><br>
+        Happy hacking!
+    </p>
+    <p>
+        <strong>Dar permisos de usuario a un directorio</strong><br>
+        sudo chown -R [tu usuario] [la carpeta que quieres que tenga permisos
+        (ejemplo: ~/projects)]
+    </p>
+
+    <hr>
+    <i> JJJ </i>
+
+</body>
+
+</html>
